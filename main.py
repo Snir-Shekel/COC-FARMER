@@ -36,7 +36,7 @@ def clickeod():
     hsv_filter = HsvFilter(31, 114, 0, 88, 255, 255, 0, 0, 40, 0)
 
     loop_time = time()
-    can_mine = 0
+    can_mine = 1
     while (True):
 
         screenshot = wincap.get_screenshot()
