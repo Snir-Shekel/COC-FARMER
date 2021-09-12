@@ -16,18 +16,16 @@ import re
 
 def clickeod():
     print("niguz")
-    # Change the working directory to the folder this script is in.
-    # Doing this because I'll be putting the files from each video in their own folder on GitHub
-    # os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    
 
-    # initialize the WindowCapture class
+    
     wincap = WindowCapture('BlueStacks')
 
-    # load the trained model
+   
 
     boe = 0.5
     banan = r"C:\Users\kalab\Desktop\Screenshot_29.jpg"
-    # load an empty Vision class
+   
     vision_gold = Vision(banan)
     # 29-34, 37, 39
 
@@ -68,12 +66,11 @@ def clickeod():
 
 
 
-        # debug the loop rate
+        
         print('FPS {}'.format(1 / (time() - loop_time)))
         loop_time = time()
 
-        # press 'q' with the output window focused to exit.
-        # waits 1 ms every loop to process key presses
+        
         if cv.waitKey(1) == ord('q'):
             can_mine = 0
             break
