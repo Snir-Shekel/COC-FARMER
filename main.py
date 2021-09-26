@@ -15,7 +15,7 @@ import re
 
 
 def clickeod():
-    print("niguz")
+    
     
 
     
